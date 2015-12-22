@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>People</title>
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+		
+		<link href="support/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/data.css">
+	</head>
+<body>
+<div class="content">	
+	<div class="tabs">
+		<ul class="tab-links">
+		    <li><a href="#tab1">Customers</a></li>
+		    <li><a href="#tab2">Orders</a></li>
+		    <li><a href="#tab3">Accessory Orders</a></li>
+		    <li><a href="#tab4">Dresses</a></li>
+		    <li><a href="#tab5">Accessories</a></li>
+			<li><a href="#tab6">Bookings</a></li>
+		</ul>
+		
+		<div class="tab-content">
+
+			<!---------- Tab 1 ---------->
+		    <div id="tab1" class="tab active">
+				<form>
+					<div class="field">
+						<label for "search1"> Search</label>
+						<input type="text" id="search1" class="search" autocomplete="off"></input>
+					</div>
+				</form>
+			
+				<h3>Customers</h3>
+				<div class="tableDiv" style="height:230px;overflow:auto;">
+					<table id="DataTable">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="first_name" class="tableHeader" href="#">First Name</a></th>
+								<th><a name="last_name" class="tableHeader" href="#">Last Name</a></th>
+								<th><a name="wedding_dress1" class="tableHeader" href="#">Dress 1</a></th>
+								<th><a name="wedding_dress2" class="tableHeader" href="#">Dress 2</a></th>
+								<th><a name="wedding_dress3" class="tableHeader" href="#">Dress 3</a></th>
+								<th><a name="information" class="tableHeader" href="#">Information</a></th>
+								<th><a name="created" class="tableHeader" href="#">Date</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<form class="submit_form">
+					<div class="field">
+						<label for "first_name"> First Name</label>
+						<input type="text" name="first_name" id="first_name" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "last_name"> Last Name</label>
+						<input type="text" name="last_name" id="last_name" autocomplete="off"></input>
+					</div>
+					<div class="field dress_field1">
+						
+					</div>
+					<div class="field dress_field2">
+						
+					</div>
+					<div class="field dress_field3">
+						
+					</div>
+					<br>
+					<label for "information"> Information </label>
+					<div class="field">
+						
+						<textarea name="information" id="information" rows="5" style="width:300px"></textarea>
+					</div>
+					<input type="submit" id="submit_button" value="Submit"></input>
+				</form>
+			</div>
+
+			<!---------- Tab 2 ---------->
+		    <div id="tab2" class="tab">
+			  	<form>
+					<div class="field">
+						<label for "search2"> Search</label>
+						<input type="text" id="search2" class="search" autocomplete="off"></input>
+					</div>
+				</form>
+			
+				<h3>Orders</h3>
+				<div class="tableDiv" style="height:270px;overflow:auto;">
+					<table id="DataTable2">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="name" class="tableHeader" href="#">Customer Name</a></th>
+								<th><a name="order_number" class="tableHeader" href="#">Order Number</a></th>
+								<th><a name="dress" class="tableHeader" href="#">Wedding Dress</a></th>
+								<th><a name="import_price" class="tableHeader" href="#">Import Price</a></th>
+								<th><a name="sale_price" class="tableHeader" href="#">Sale Price</a></th>
+								<th><a name="tracking" class="tableHeader" href="#">Tracking Number</a></th>
+								<th><a name="order_date" class="tableHeader" href="#">Order Date</a></th>
+								<th><a name="due_date" class="tableHeader" href="#">Due Date</a></th>
+								<th><a name="arrival_date" class="tableHeader" href="#">Arrival Date</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<form class="submit_form">
+					<div class="field">
+						<label for "name"> Name</label>
+						<input type="text" name="name" id="name" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "order_number"> Order Number</label>
+						<input type="text" name="order_number" id="order_number" autocomplete="off"></input>
+					</div>
+					<div class="field dress_field">
+					</div>
+					<div class="field">
+						<label for "tracking_number"> Tracking Number</label>
+						<input type="text" name="tracking" id="tracking_number" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "tracking_number"> Import Price (NOK)</label>
+						<input type="number" name="import_price" id="import_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "tracking_number"> Sale Price (NOK)</label>
+						<input type="number" name="sale_price" id="sale_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "order_date"> Order Date</label>
+						<input type="date" name="order_date" id="order_date"></input>
+					</div>
+					<div class="field">
+						<label for "due_date"> Due Date</label>
+						<input type="date" name="due_date" id="due_date"></input>
+					</div>
+					<input type="submit" id="submit_button" value="Submit"></input>
+				</form>
+		   </div>
+
+		   <!---------- Tab 3 ---------->
+			<div id="tab3" class="tab">
+			  	<form>
+					<div class="field">
+						<label for "search3"> Search</label>
+						<input type="text" id="search3" class="search" autocomplete="off"></input>
+					</div>
+				</form>
+			
+				<h3>Accessory Orders</h3>
+				<div class="tableDiv" style="height:330px;overflow:auto;">
+					<table id="DataTable3">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="name" class="tableHeader" href="#">Name</a></th>
+								<th><a name="accessory" class="tableHeader" href="#">Accessory</a></th>
+								<th><a name="import_price" class="tableHeader" href="#">Import Price</a></th>
+								<th><a name="sale_price" class="tableHeader" href="#">Sale Price</a></th>
+								<th><a name="order_date" class="tableHeader" href="#">Order Date</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<form class="submit_form">
+					<div class="field">
+						<label for "name"> Name</label>
+						<input type="text" name="name" id="name" autocomplete="off"></input>
+					</div>
+					<div class="field accessory_field">
+					</div>
+					<div class="field">
+						<label for "import_price"> Import Price (NOK)</label>
+						<input type="number" name="import_price" id="import_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "sale_price"> Sale Price (NOK)</label>
+						<input type="number" name="sale_price" id="sale_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "order_date"> Order Date</label>
+						<input type="date" name="order_date" id="order_date"></input>
+					</div>
+					<input type="submit" id="submit_button" value="Submit"></input>
+				</form>
+		   </div>
+
+			<!---------- Tab 4 ---------->
+			<div id="tab4" class="tab">
+			  	<form>
+					<div class="field">
+						<label for "search4"> Search</label>
+						<input type="text"  id="search4" class="search" autocomplete="off"></input>
+						<select class="searchOptions4">
+							<option value="name"> Dress</option>
+							<option value="dress_code"> Dress Code</option>
+						</select>
+					</div>
+				</form>
+			
+				<h3>Dresses</h3>
+				<div class="tableDiv" style="height:330px;overflow:auto;">
+					<table id="DataTable4">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="name" class="tableHeader" href="#">Dress</a></th>
+								<th><a name="dress_code" class="tableHeader" href="#">Dress Code</a></th>
+								<th><a name="purchase_price" class="tableHeader" href="#">Purchase Price</a></th>
+								<th><a name="sale_price" class="tableHeader" href="#">Sale Price</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<form class="submit_form">
+					<div class="field">
+						<label for "name"> Dress</label>
+						<input type="text" name="name" id="name" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "dress_code"> Dress Code</label>
+						<input type="text" name="dress_code" id="dress_code" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "sale_price"> Sale Price (NOK)</label>
+						<input type="text" name="sale_price" id="sale_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "purchase_price"> Purchase Price (RMB)</label>
+						<input type="text" name="purchase_price" id="purchase_price" autocomplete="off"></input>
+					</div>
+					<input type="submit" id="submit_button" value="Submit"></input>
+				</form>
+		   </div>
+
+			<!---------- Tab 5 ---------->
+			<div id="tab5" class="tab">
+			  	<form>
+					<div class="field">
+						<label for "search5"> Search</label>
+						<input type="text" id="search5" class="search" autocomplete="off"></input>
+						<select class="searchOptions5">
+							<option value="name"> Accessory</option>
+							<option value="accessory_code"> Accessory Code</option>
+						</select>
+					</div>
+				</form>
+			
+				<h3>Orders</h3>
+				<div class="tableDiv" style="height:330px;overflow:auto;">
+					<table id="DataTable5">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="name" class="tableHeader" href="#">Accessory Name</a></th>
+								<th><a name="accessory_code" class="tableHeader" href="#">Accessory Code</a></th>
+								<th><a name="sale_price" class="tableHeader" href="#">Sale Price</a></th>
+								<th><a name="purchase_price" class="tableHeader" href="#">Purchase Price</a></th>
+								<th><a name="stock" class="tableHeader" href="#">Stock</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+				<form class="submit_form">
+					<div class="field">
+						<label for "name"> Accessory</label>
+						<input type="text" name="name" id="name" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "accessory_code"> Accessory Code</label>
+						<input type="text" name="accessory_code" id="accessory_code" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "sale_price"> Sale Price(NOK)</label>
+						<input type="text" name="sale_price" id="sale_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "purchase_price"> Purchase Price(RMB)</label>
+						<input type="text" name="purchase_price" id="purchase_price" autocomplete="off"></input>
+					</div>
+					<div class="field">
+						<label for "stock"> Stock </label>
+						<input type="text" name="stock" id="stock" autocomplete="off"></input>
+					</div>
+					<input type="submit" id="submit_button" value="Submit"></input>
+				</form>
+		   </div>
+
+			<!---------- Tab 6 ---------->
+			<div id="tab6" class="tab">
+			  	<form>
+					<div class="field">
+						<label for "search6"> Search</label>
+						<input type="text" id="search6" class="search" autocomplete="off"></input>
+					</div>
+				</form>
+			
+				<h3>Bookings</h3>
+				<div class="tableDiv" style="height:400px;overflow:auto;">
+					<table id="DataTable6">
+						<thead>
+							<tr>
+								<th><a name="id" class="tableHeader" href="#">ID</a></th>
+								<th><a name="name" class="tableHeader" href="#">Name</a></th>
+								<th><a name="phone_number" class="tableHeader" href="#">Phone Number</a></th>
+								<th><a name="email" class="tableHeader" href="#">Email</a></th>
+								<th><a name="information" class="tableHeader" href="#">Information</a></th>
+								<th><a name="wedding_date" class="tableHeader" href="#">Wedding Date</a></th>
+								<th><a name="booking_time" class="tableHeader" href="#">Booking Time</a></th>
+								<th>Delete B.</th>
+								<th>Edit B.</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+		   </div>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="contact" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Login to the Database</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+
+							<label for="contact-username" class="col-sm-2 control-label"> Username </label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="system_username" placeholder ="Type in system username">
+							</div>
+
+							<label for="contact-name" class="col-sm-2 control-label"> Password: </label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="system_password" placeholder ="Type in system password">
+							</div>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary submitPasswordButton" type="button" data-dismiss="modal">Login</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="support/jquery.js"></script>
+	<script type="text/javascript" src="support/bootstrap.min.js"></script>
+	<script type ="text/javascript" src="js/dataCustomer.js"> </script>
+	<script type ="text/javascript" src="js/dataOrders.js"> </script>
+	<script type ="text/javascript" src="js/dataOrdersAcc.js"> </script>
+	<script type ="text/javascript" src="js/dataDresses.js"> </script>
+	<script type ="text/javascript" src="js/dataAccessories.js"> </script>
+	<script type ="text/javascript" src="js/dataBookings.js"> </script>
+	<script type ="text/javascript" src="js/data.js"> </script> 
+</body>
+</html>

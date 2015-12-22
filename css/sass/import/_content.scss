@@ -1,0 +1,93 @@
+.smallbox{
+	width: 70%;
+	margin: auto;
+}
+
+.mediumbox{
+	width: 80%;
+	margin: auto;
+}
+
+.largebox{
+	width: 90%;
+	margin: auto;
+}
+
+.textbox{
+	width: 90%;
+	margin: auto;
+}
+
+
+.content_area{
+	background-color: white;
+	border-radius: 15px;
+	border: 2px solid #FFCCCC;
+
+	.sideText{
+		width: 85%;
+		margin: auto;
+	}
+	.infoText{
+		width: 90%;
+		font-size: 17px;
+		margin: auto;
+	}
+	.indexinfo{
+		height: 540px;
+	}
+	.text_header{
+		text-align: center;
+		font-size: 2em;
+		padding: 2%;
+		margin: auto;
+		font-family: 'Josefin Slab', serif;
+	}
+}
+
+@media (max-width: 1200px) { 
+	.smallbox{
+		width: 80%;
+	}
+
+	.mediumbox{
+		width: 90%;
+	}
+	.largebox{
+		width: 100%;
+	}
+}
+
+
+
+@media (max-width: 991px) { 
+	.content_area{
+		margin: 30px 0;
+		padding: 10px;
+		.indexinfo{
+			height: auto;
+		}
+	}
+
+	.smallbox{
+		width: 90%;
+	}
+
+	.mediumbox{
+		width: 100%;
+	}
+	.largebox{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) { 
+/*----- Sub Menu-----*/
+	.content_area{
+		border-radius: 10px;
+	}
+
+	.smallbox{
+		width: 100%;
+	}
+}

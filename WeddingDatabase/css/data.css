@@ -1,0 +1,109 @@
+/* Import Compass */
+/* Import Sections */
+/* line 1, sass/import/_setup.scss */
+body {
+  background: #FFE9E7;
+  font: normal 13px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* line 6, sass/import/_setup.scss */
+a {
+  color: inherit;
+}
+
+/* line 9, sass/import/_setup.scss */
+th {
+  font: bold 13px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  text-align: left;
+  border-right: 1px solid #C1DAD7;
+  border-bottom: 1px solid #C1DAD7;
+  border-top: 1px solid #C1DAD7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 6px 6px 12px;
+  background: #f0d6da;
+}
+
+/* line 20, sass/import/_setup.scss */
+td {
+  border-right: 1px solid #C1DAD7;
+  border-bottom: 1px solid #C1DAD7;
+  background: #fff;
+  padding: 6px 6px 6px 12px;
+  color: #4f6b72;
+  min-width: 50px;
+  max-width: 300px;
+}
+
+/*----- Tabs -----*/
+/* line 2, sass/import/_tabs.scss */
+.tabs {
+  width: 100%;
+  display: inline-block;
+}
+
+/*----- Tab Links -----*/
+/* Clearfix */
+/* line 10, sass/import/_tabs.scss */
+.tab-links li {
+  margin: 0px 5px;
+  float: left;
+  list-style: none;
+}
+/* line 16, sass/import/_tabs.scss */
+.tab-links a {
+  padding: 9px 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0px 0px;
+  background: #e7c4ca;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4c4c4c;
+  transition: all linear 0.15s;
+}
+/* line 27, sass/import/_tabs.scss */
+.tab-links a:hover {
+  background: #d490b2;
+  text-decoration: none;
+}
+/* line 32, sass/import/_tabs.scss */
+.tab-links li.active a, .tab-links li.active a:hover {
+  background: #fff;
+  color: #4c4c4c;
+}
+
+/* line 38, sass/import/_tabs.scss */
+.tab-links:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/*----- Content of Tabs -----*/
+/* line 47, sass/import/_tabs.scss */
+.tab-content {
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+/* line 53, sass/import/_tabs.scss */
+.tab-content .active {
+  display: block;
+}
+
+/* line 1, sass/import/_tableContent.scss */
+.tableDiv {
+  margin-bottom: 30px;
+}
+
+/* line 5, sass/import/_tableContent.scss */
+.content {
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* line 10, sass/import/_tableContent.scss */
+.tab {
+  display: none;
+}

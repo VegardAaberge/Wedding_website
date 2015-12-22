@@ -1,0 +1,65 @@
+/*----- Top Area -----*/
+.top_area {
+	position:relative;
+	margin-top: 1%;
+}
+.LanguageOptions{
+    position:absolute;
+    bottom:0;
+    right:20px;
+
+    img{
+    	width: 42px;
+    }
+}
+
+.shareOptions{
+    position:absolute;
+    bottom:0;
+    left:20px;
+    margin-bottom: 5px;
+
+    img{
+    	width: 42px;
+    }
+}
+
+
+.titleImg{
+	width: 40%;
+	margin-top: 1%;
+	max-width: 600px;
+}
+
+.bottom_footer{
+	text-align: center;
+	color: #d3d3d3;
+	background: #000;
+	font-family: 'Josefin Slab', serif;
+	margin-top: 120px;
+}
+
+ @media (max-width: 767px) { 
+ 	.titleImg{
+		width: 90%;
+		margin: 15px 0 25px 0;
+	}
+
+	.LanguageOptions{
+	    right:10px;
+
+	    img{
+	    	width: 36px;
+	    }
+	}
+
+
+
+	.shareOptions{
+	    left:10px;
+
+	    img{
+	    	width: 30px;
+	    }
+	}
+}

@@ -1,0 +1,164 @@
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#C0C0C0;
+}
+
+/*----- Menu -----*/
+.menu {
+  margin:20px auto;
+	text-align: center;
+
+  a{
+    transition:all linear 0.15s;
+    color:#444;
+  }
+
+  li{
+    margin:0px;
+  }
+
+  li:hover > a{
+    transition:all linear 0.15s;
+    color:#000;
+  }
+
+  > ul > li{
+    display:inline-block;
+    position:relative;
+    font-size:16px;
+  }
+
+  > ul > li:hover{
+    background: $hover-menu;
+  }
+
+  > ul > .current-item > a{
+    background: $hover-menu;
+  }
+
+  > ul > li > a{
+    padding:7px 35px;
+    display:inline-block;
+  }
+
+  .arrow{
+    font-size:11px;
+    line-height:0%;
+  }
+
+  li:hover .sub-menu{
+    z-index:1;
+    opacity:1;
+  }
+
+}
+
+/*----- Sub Menu-----*/
+
+.sub-menu {
+    width:140%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#CCC;
+
+    li{
+      display:block;
+      font-size:16px;
+    }
+
+    li a{
+      padding:10px 30px;
+      display:block;
+    }
+
+    li a:hover{
+      background: $hover-sub-menu;
+    }
+
+    .current-item a{
+      background: $hover-sub-menu;
+    }
+}
+
+@media (max-width: 991px) { 
+	.menu > ul > li > a {
+   	 	padding:7px 20px;
+	}
+}
+
+@media (max-width: 767px) { 
+  .sub-menu{
+    li{
+      font-size:14px;
+    }
+
+    li a{
+      padding:7px 10px;
+    }
+  }
+
+  .menu{
+    > ul > li > a{
+      padding:7px 10px;
+    }
+
+    > ul > li{
+      font-size:14px;
+    }
+  }
+}
+
+@media (max-width: 500px) { 
+  .sub-menu{
+    li{
+      font-size:12px;
+    }
+
+    li a{
+      padding:5px 0px;
+    }
+  }
+
+
+  .menu{
+    > ul > li > a{
+      padding:7px 2px;
+    }
+
+    > ul > li{
+      font-size:12px;
+    }
+  }
+}
+
+
+@media (max-width: 350px) {
+  .sub-menu{
+    li{
+      font-size:10px;
+    }
+
+    li a{
+      padding:4px 0px;
+    }
+  }
+
+
+  .menu{
+    > ul > li > a{
+      padding:7px 1px;
+    }
+
+    > ul > li{
+      font-size:10px;
+    }
+  }
+}

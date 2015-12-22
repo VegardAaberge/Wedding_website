@@ -1,0 +1,25 @@
+.booking_form{
+	padding-top: 20px;
+}
+
+.booking_form{
+		margin: 0 5% 0 2%;
+}
+
+@media (max-width: 991px) { 
+	.booking_form{
+		width: 70%;
+		margin: auto;
+	}
+	.contactIndex{
+		display: none;
+	}
+}
+
+@media (max-width: 767px) { 
+/*----- Sub Menu-----*/
+	.booking_form{
+		width: 85%;
+		margin: auto;
+	}
+}

@@ -1,0 +1,698 @@
+/* Import Compass */
+/* Import Sections */
+/* line 1, sass/import/_setup.scss */
+body {
+  background: #fffff0;
+}
+
+/* line 5, sass/import/_setup.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media \0screen {
+  /* line 11, sass/import/_setup.scss */
+  img {
+    width: auto;
+    /* for ie 8 */
+  }
+}
+/* line 16, sass/import/_setup.scss */
+a, ul, li, h1, h2, h3, h4, h5, h6, p, span, td, div {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  color: inherit;
+}
+
+/* line 24, sass/import/_setup.scss */
+.paddingRow {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+@media (min-width: 1600px) {
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-1 {
+    width: 8.33333 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-2 {
+    width: 16.66667 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-3 {
+    width: 25 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-4 {
+    width: 33.33333 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-5 {
+    width: 41.66667 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-6 {
+    width: 50 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-7 {
+    width: 58.33333 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-8 {
+    width: 66.66667 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-9 {
+    width: 75 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-10 {
+    width: 83.33333 !important;
+  }
+
+  /* line 35, sass/import/_setup.scss */
+  .col-xl-11 {
+    width: 91.66667 !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 42, sass/import/_setup.scss */
+  .noMobileMargin {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  /* line 47, sass/import/_setup.scss */
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 51, sass/import/_setup.scss */
+  .paddingRow {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/*----- Top Area -----*/
+/* line 2, sass/import/_templates.scss */
+.top_area {
+  position: relative;
+  margin-top: 1%;
+}
+
+/* line 6, sass/import/_templates.scss */
+.LanguageOptions {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+/* line 11, sass/import/_templates.scss */
+.LanguageOptions img {
+  width: 42px;
+}
+
+/* line 16, sass/import/_templates.scss */
+.shareOptions {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  margin-bottom: 5px;
+}
+/* line 22, sass/import/_templates.scss */
+.shareOptions img {
+  width: 42px;
+}
+
+/* line 28, sass/import/_templates.scss */
+.titleImg {
+  width: 40%;
+  margin-top: 1%;
+  max-width: 600px;
+}
+
+/* line 34, sass/import/_templates.scss */
+.bottom_footer {
+  text-align: center;
+  color: #d3d3d3;
+  background: #000;
+  font-family: 'Josefin Slab', serif;
+  margin-top: 120px;
+}
+
+@media (max-width: 767px) {
+  /* line 43, sass/import/_templates.scss */
+  .titleImg {
+    width: 90%;
+    margin: 15px 0 25px 0;
+  }
+
+  /* line 48, sass/import/_templates.scss */
+  .LanguageOptions {
+    right: 10px;
+  }
+  /* line 51, sass/import/_templates.scss */
+  .LanguageOptions img {
+    width: 36px;
+  }
+
+  /* line 58, sass/import/_templates.scss */
+  .shareOptions {
+    left: 10px;
+  }
+  /* line 61, sass/import/_templates.scss */
+  .shareOptions img {
+    width: 30px;
+  }
+}
+/*----- Menu Outline -----*/
+/* line 2, sass/import/_nav.scss */
+.menu-wrap {
+  width: 100%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background: #C0C0C0;
+}
+
+/*----- Menu -----*/
+/* line 9, sass/import/_nav.scss */
+.menu {
+  margin: 20px auto;
+  text-align: center;
+}
+/* line 13, sass/import/_nav.scss */
+.menu a {
+  transition: all linear 0.15s;
+  color: #444;
+}
+/* line 18, sass/import/_nav.scss */
+.menu li {
+  margin: 0px;
+}
+/* line 22, sass/import/_nav.scss */
+.menu li:hover > a {
+  transition: all linear 0.15s;
+  color: #000;
+}
+/* line 27, sass/import/_nav.scss */
+.menu > ul > li {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+/* line 33, sass/import/_nav.scss */
+.menu > ul > li:hover {
+  background: #E8E8E8;
+}
+/* line 37, sass/import/_nav.scss */
+.menu > ul > .current-item > a {
+  background: #E8E8E8;
+}
+/* line 41, sass/import/_nav.scss */
+.menu > ul > li > a {
+  padding: 7px 35px;
+  display: inline-block;
+}
+/* line 46, sass/import/_nav.scss */
+.menu .arrow {
+  font-size: 11px;
+  line-height: 0%;
+}
+/* line 51, sass/import/_nav.scss */
+.menu li:hover .sub-menu {
+  z-index: 1;
+  opacity: 1;
+}
+
+/*----- Sub Menu-----*/
+/* line 60, sass/import/_nav.scss */
+.sub-menu {
+  width: 140%;
+  padding: 5px 0px;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity linear 0.15s;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  background: #CCC;
+}
+/* line 72, sass/import/_nav.scss */
+.sub-menu li {
+  display: block;
+  font-size: 16px;
+}
+/* line 77, sass/import/_nav.scss */
+.sub-menu li a {
+  padding: 10px 30px;
+  display: block;
+}
+/* line 82, sass/import/_nav.scss */
+.sub-menu li a:hover {
+  background: #E8ADAA;
+}
+/* line 86, sass/import/_nav.scss */
+.sub-menu .current-item a {
+  background: #E8ADAA;
+}
+
+@media (max-width: 991px) {
+  /* line 92, sass/import/_nav.scss */
+  .menu > ul > li > a {
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 99, sass/import/_nav.scss */
+  .sub-menu li {
+    font-size: 14px;
+  }
+  /* line 103, sass/import/_nav.scss */
+  .sub-menu li a {
+    padding: 7px 10px;
+  }
+
+  /* line 109, sass/import/_nav.scss */
+  .menu > ul > li > a {
+    padding: 7px 10px;
+  }
+  /* line 113, sass/import/_nav.scss */
+  .menu > ul > li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 121, sass/import/_nav.scss */
+  .sub-menu li {
+    font-size: 12px;
+  }
+  /* line 125, sass/import/_nav.scss */
+  .sub-menu li a {
+    padding: 5px 0px;
+  }
+
+  /* line 132, sass/import/_nav.scss */
+  .menu > ul > li > a {
+    padding: 7px 2px;
+  }
+  /* line 136, sass/import/_nav.scss */
+  .menu > ul > li {
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  /* line 145, sass/import/_nav.scss */
+  .sub-menu li {
+    font-size: 10px;
+  }
+  /* line 149, sass/import/_nav.scss */
+  .sub-menu li a {
+    padding: 4px 0px;
+  }
+
+  /* line 156, sass/import/_nav.scss */
+  .menu > ul > li > a {
+    padding: 7px 1px;
+  }
+  /* line 160, sass/import/_nav.scss */
+  .menu > ul > li {
+    font-size: 10px;
+  }
+}
+/*----- Images Header-----*/
+/* line 2, sass/import/_collection.scss */
+.image_header {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 5%;
+  font-family: 'Josefin Slab', serif;
+}
+
+/*----- Images Section-----*/
+/* line 10, sass/import/_collection.scss */
+.imageSection {
+  width: 95%;
+  margin: auto;
+}
+/* line 14, sass/import/_collection.scss */
+.imageSection img {
+  padding: 10px 0;
+  width: 100%;
+}
+/* line 19, sass/import/_collection.scss */
+.imageSection img:hover {
+  opacity: 0.8;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+/* line 25, sass/import/_collection.scss */
+.imageSection .col-xs-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/*----- Images Wrap-----*/
+/* line 32, sass/import/_collection.scss */
+.imgWrap {
+  position: relative;
+}
+/* line 35, sass/import/_collection.scss */
+.imgWrap .imgDescription {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  color: black;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+/* line 51, sass/import/_collection.scss */
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*----- Up Arrow-----*/
+/* line 58, sass/import/_collection.scss */
+.arrowContainer {
+  width: 100%;
+  height: 40px;
+}
+/* line 62, sass/import/_collection.scss */
+.arrowContainer .arrowUp {
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 2.5%;
+}
+
+@media (max-width: 767px) {
+  /* line 72, sass/import/_collection.scss */
+  .imageSection {
+    width: 100%;
+  }
+
+  /* line 76, sass/import/_collection.scss */
+  .imageSection .col-xs-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  /* line 81, sass/import/_collection.scss */
+  .imgDescription {
+    font-size: 17px !important;
+    top: 80% !important;
+  }
+}
+@media (max-width: 500px) {
+  /* line 88, sass/import/_collection.scss */
+  .imgDescription {
+    font-size: 14px !important;
+    top: 70% !important;
+  }
+
+  /* line 93, sass/import/_collection.scss */
+  .imageSection img {
+    padding: 7px 0;
+  }
+}
+/* line 1, sass/import/_booking.scss */
+.booking_form {
+  padding-top: 20px;
+}
+
+/* line 5, sass/import/_booking.scss */
+.booking_form {
+  margin: 0 5% 0 2%;
+}
+
+@media (max-width: 991px) {
+  /* line 10, sass/import/_booking.scss */
+  .booking_form {
+    width: 70%;
+    margin: auto;
+  }
+
+  /* line 14, sass/import/_booking.scss */
+  .contactIndex {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  /*----- Sub Menu-----*/
+  /* line 21, sass/import/_booking.scss */
+  .booking_form {
+    width: 85%;
+    margin: auto;
+  }
+}
+/* line 2, sass/import/_carousel.scss */
+#screenshot-carousel .carousel-caption {
+  color: black;
+  right: 78%;
+  text-align: center;
+  max-width: 500px;
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+@media (min-width: 767px) {
+  /* line 13, sass/import/_carousel.scss */
+  #screenshot-carousel .carousel-indicators > li {
+    border-radius: 0px;
+    min-width: 25px;
+    background-color: #9d9d9d;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 24, sass/import/_carousel.scss */
+  #screenshot-carousel .carousel-indicators {
+    bottom: 0px;
+  }
+  /* line 28, sass/import/_carousel.scss */
+  #screenshot-carousel .carousel-indicators > li {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+/* line 34, sass/import/_carousel.scss */
+#screenshot-carousel > .carousel-indicators > .active {
+  background-color: #FFA500;
+}
+/* line 38, sass/import/_carousel.scss */
+#screenshot-carousel .carousel-inner > .item {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 1, sass/import/_content.scss */
+.smallbox {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 6, sass/import/_content.scss */
+.mediumbox {
+  width: 80%;
+  margin: auto;
+}
+
+/* line 11, sass/import/_content.scss */
+.largebox {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 16, sass/import/_content.scss */
+.textbox {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 22, sass/import/_content.scss */
+.content_area {
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid #FFCCCC;
+}
+/* line 27, sass/import/_content.scss */
+.content_area .sideText {
+  width: 85%;
+  margin: auto;
+}
+/* line 31, sass/import/_content.scss */
+.content_area .infoText {
+  width: 90%;
+  font-size: 17px;
+  margin: auto;
+}
+/* line 36, sass/import/_content.scss */
+.content_area .indexinfo {
+  height: 540px;
+}
+/* line 39, sass/import/_content.scss */
+.content_area .text_header {
+  text-align: center;
+  font-size: 2em;
+  padding: 2%;
+  margin: auto;
+  font-family: 'Josefin Slab', serif;
+}
+
+@media (max-width: 1200px) {
+  /* line 49, sass/import/_content.scss */
+  .smallbox {
+    width: 80%;
+  }
+
+  /* line 53, sass/import/_content.scss */
+  .mediumbox {
+    width: 90%;
+  }
+
+  /* line 56, sass/import/_content.scss */
+  .largebox {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 64, sass/import/_content.scss */
+  .content_area {
+    margin: 30px 0;
+    padding: 10px;
+  }
+  /* line 67, sass/import/_content.scss */
+  .content_area .indexinfo {
+    height: auto;
+  }
+
+  /* line 72, sass/import/_content.scss */
+  .smallbox {
+    width: 90%;
+  }
+
+  /* line 76, sass/import/_content.scss */
+  .mediumbox {
+    width: 100%;
+  }
+
+  /* line 79, sass/import/_content.scss */
+  .largebox {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /*----- Sub Menu-----*/
+  /* line 86, sass/import/_content.scss */
+  .content_area {
+    border-radius: 10px;
+  }
+
+  /* line 90, sass/import/_content.scss */
+  .smallbox {
+    width: 100%;
+  }
+}
+/* line 1, sass/import/_imageIndex.scss */
+.indexNavImage {
+  padding: 20px;
+}
+/* line 4, sass/import/_imageIndex.scss */
+.indexNavImage .indexNavImage_textbox {
+  border: 2px solid grey;
+  opacity: 0.8;
+  margin: 20px auto;
+  width: 60%;
+  min-width: 160px;
+  max-width: 240px;
+  padding: 0.5em;
+  font-size: 18px;
+  font-family: 'Gill Sans W01 Book';
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* line 18, sass/import/_imageIndex.scss */
+.indexNavImage .indexNavImage_Img:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+/*----- MAP -----*/
+/* line 2, sass/import/_map.scss */
+.mapArea {
+  width: 90%;
+  margin: auto;
+  height: 400px;
+}
+/* line 7, sass/import/_map.scss */
+.mapArea .map_oss {
+  width: 100%;
+  height: 350px;
+  display: inline-block;
+}
+/* line 13, sass/import/_map.scss */
+.mapArea .map_bestilling {
+  width: 85%;
+  margin: auto;
+  height: 200px;
+}
+/* line 19, sass/import/_map.scss */
+.mapArea .mapInfo {
+  margin-left: 3%;
+}
+
+/* line 25, sass/import/_map.scss */
+.map_Link {
+  margin-left: 7.5%;
+  color: blue;
+}
+
+/* line 29, sass/import/_map.scss */
+.map_footer {
+  color: blue;
+}
+
+@media (max-width: 500px) {
+  /* line 35, sass/import/_map.scss */
+  .mapArea {
+    height: 700px;
+  }
+}

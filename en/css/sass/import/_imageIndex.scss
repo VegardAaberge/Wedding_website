@@ -1,0 +1,28 @@
+.indexNavImage{
+	padding: 20px;
+
+	.indexNavImage_textbox{
+		border: 2px solid grey;
+		opacity: 0.8;
+		margin: 20px auto;
+		width: 60%;
+		min-width: 160px;
+		max-width: 240px;
+		padding: 0.5em;
+		font-size: 18px;
+		font-family: 'Gill Sans W01 Book';
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	.indexNavImage_Img:hover{
+		opacity: 0.8;
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-o-transition: opacity 500ms;
+		transition: opacity 500ms;
+	}
+
+
+	
+}
