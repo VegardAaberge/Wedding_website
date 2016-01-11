@@ -1,0 +1,21 @@
+$background-color: #fffff0;
+$hover-menu: #E8E8E8;
+$hover-sub-menu: #E8ADAA;
+$carousel-indicators-active: #FFA500;
+$carousel-indicators-notactive: #9d9d9d;
+   
+/* Import Compass 
+@import "compass/utilities";
+@import "compass/css3";
+*/  
+     
+/* Import Sections */
+@import "import/setup";
+@import "import/templates";
+@import "import/nav";
+@import "import/collection";
+@import "import/booking";
+@import "import/carousel";
+@import "import/content";
+@import "import/imageIndex";
+@import "import/map";

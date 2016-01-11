@@ -1,0 +1,95 @@
+/*----- Images Header-----*/
+.image_header{
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 5%;
+  font-family: 'Josefin Slab', serif;
+}
+
+/*----- Images Section-----*/
+.imageSection{
+  width: 95%;
+  margin: auto;
+
+  img{
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  img:hover{
+     opacity: 0.8;
+     transition: opacity .50s ease-in-out;
+  }
+
+  .col-xs-4{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/*----- Images Wrap-----*/
+.imgWrap {
+  position: relative;
+
+  .imgDescription {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    color: black;
+    transition: opacity .50s ease-in-out;
+
+  }
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*----- Up Arrow-----*/
+.arrowContainer{
+  width: 100%;
+  height: 40px;
+
+  .arrowUp{
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 2.5%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .imageSection{
+    width: 100%;
+  }
+
+  .imageSection .col-xs-4{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .imgDescription{
+    font-size:17px !important;
+    top: 80% !important;
+  }
+}
+
+@media (max-width: 500px) { 
+  .imgDescription{
+    font-size:14px !important;
+    top: 70% !important;
+  }
+
+  .imageSection img{
+    padding: 7px 0;
+  } 
+  
+}
